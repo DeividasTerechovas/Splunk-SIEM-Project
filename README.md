@@ -105,7 +105,7 @@ index=firewall action=allowed OR action=blocked
 2. Set a threshold (e.g., 100 hits on internal IPs/ports).
 3. Finally, apply an IP location lookup to identify the geographical location of suspicious IPs. You can use the geoip function to map the IP addresses to countries.
 
-<img src="https://i.imgur.com/oz95sFN.png" width="500"
+<img src="https://i.imgur.com/oz95sFN.png" width="500">
 
 # Conclusion
 
