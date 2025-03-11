@@ -94,3 +94,17 @@ index=firewall action=blocked
 ```
 Add each of these queries to your dashboard in Single Value Panels and choose different colors for each one.
 
+# Step 7: Monitor Suspicious Activity
+Now, let’s say you want to monitor for suspicious scanning activity on your network (e.g., external IPs trying to probe internal systems). To do this:
+
+1. Create a query to track all connections to your internal systems:
+```
+index=firewall action=allowed OR action=blocked
+| stats count by src_ip, dest_ip, dest_port
+```
+2. Set a threshold (e.g., 100 hits on internal IPs/ports).
+3. Finally, apply an IP location lookup to identify the geographical location of suspicious IPs. You can use the geoip function to map the IP addresses to countries.
+
+# Conclusion
+
+We have installed and set up Splunk, ingested sample data, and built a simple dashboard to monitor firewall connections.
