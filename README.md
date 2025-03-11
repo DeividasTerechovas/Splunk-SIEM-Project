@@ -1,49 +1,47 @@
 # Splunk-SIEM-Project
 
-# Setting Up Splunk on Your Personal Computer
+We'll be using some SPL from the docs and installing Splunk on a Windows 10 virtual machine.
 
-We will be setting up Splunk on a Windows 10 VM and using some SPL from documentation.
-
-# Step 1: Download and Install Splunk Enterprise
+# Step 1: Install Splunk Enterprise after downloading it.
 
 The first thing you need to do is go to the Splunk official website and download Splunk Enterprise.
 
-Once you've downloaded the installer, follow these steps:
+After downloading the installer, take the following actions:
 
-1. Open the installer and agree to the license agreement.
-2. Set your username (In this instance we used DTSOCVM) and your password.
-3. Hit "Next" and let it install.
-4. 
+1. Accept the license agreement after opening the installation.
+2. Enter your password and username (in this case, DTSOCVM).
+3. Press "Next" and accept the installation.
+
 After installation is complete, click "Finish". This will automatically open a new browser tab where you can log in using the username and password you set up earlier.
 
 # Step 2: Install the Universal Forwarder
 
-The next step is to install the Splunk Universal Forwarder. This tool will allow you to send data from your personal computer to your Splunk Enterprise server.
+Installing the Splunk Universal Forwarder is the next step. You can use this program to transfer data to your Splunk Enterprise server from your own PC.
 
-1.Download the Universal Forwarder from the Splunk Universal Forwarder page.
-2.After downloading, accept the license agreement, and customize your installation options.
-3.Set your directory.
-4.Input the Splunk Enterprise server's IP address (the one you installed Splunk on earlier), followed by port 8089 for the deployment server and port 9997 for receiving data.
+1. Go to the Splunk Universal Forwarder page and download the Universal Forwarder.
+2. Accept the license agreement after downloading, then adjust the installation settings.
+3. Configure your directory.
+4. Enter the IP address of the Splunk Enterprise server (the one on which you previously installed Splunk), then the deployment server's port (8089), and the data reception port (9997).
 
-# Configure Splunk to Receive Data
+# Set Up Splunk to Get Information
 
-Before you continue, you need to configure Splunk to receive the forwarded data.
+You must first set up Splunk to receive the forwarded data before proceeding.
 
-1. Go to Settings > Forwarding and Receiving.
-2. Click "Add New" under receiving, and input port 9997.
+1. Select Forwarding and Receiving under Settings.
+2. Under receiving, select "Add New" and enter port 9997.
    
 Now, go ahead and finish the installation of the Universal Forwarder.
 
-# Step 3: Verify Your Forwarding Setup 
+# Step 3: Check Your Forwarding Configuration 
 
-Once the Universal Forwarer is installed and configured, head back to Splunk Enterprice and check if everything is set up proerly: 
+Return to Splunk Enterprice after installing and configuring the Universal Forwarer to make sure everything is configured correctly: 
 
-1. Navigate to Search & Reporting > Data Summary.
-2. If the installation was successfull, you'll see your hostname listed there. This means your Universal Forwarder is successfully sending data to your Splunk instance.
+1. Select Data Summary under Search & Reporting.
+2. Your hostname will appear there if the installation went OK. This indicates that data is being successfully sent to your Splunk instance by your Universal Forwarder.
 
-# Step 4: Ingest Sample Data into Splunk
+# Step 4: Use Splunk to Incorporate Sample Data
 
-Now that Splunk is installed and receiving data from your Universal Forwarder, it’s time to practice with some sample data. we will be using Bots V3 dataset, which includes a variety of logs (AWS, Office 365, and streaming logs)
+It's time to practice using some sample data now that Splunk is set up and getting data from your Universal Forwarder. The Bots V3 dataset, which contains a range of logs (AWS, Office 365, and streaming logs), will be used.
 
 Follow these steps to add the dataset:
 
