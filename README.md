@@ -2,6 +2,16 @@
 
 We'll be using some SPL from the docs and installing Splunk on a Windows 10 virtual machine.
 
+# Skill Learned
+Splunk Installation and Configuration
+Windows System Administration
+Data Ingestion and Forwarding 
+Search Processing Language (SPL)
+Log Analysis
+Dashboard Creation in Splunk
+Security Monitoring and Incident Detection 
+Basic SIEM Concepts
+
 # Step 1: Install Splunk Enterprise after downloading it.
 
 The first thing you need to do is go to the Splunk official website and download Splunk Enterprise.
