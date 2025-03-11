@@ -94,6 +94,8 @@ index=firewall action=blocked
 ```
 Add each of these queries to your dashboard in Single Value Panels and choose different colors for each one.
 
+<img src="https://i.imgur.com/siB4zrm.jpeg" width="500">
+
 # Step 7: Monitor Suspicious Activity
 Now, let’s say you want to monitor for suspicious scanning activity on your network (e.g., external IPs trying to probe internal systems). To do this:
 
